@@ -1,14 +1,14 @@
 module.exports = {
-  extends: ["next/core-web-vitals", "prettier"],
-  plugins: ["prettier"],
+  extends: ['next/core-web-vitals', 'prettier'],
+  plugins: ['prettier'],
   rules: {
-    indent: ["error", 2],
-    "prettier/prettier": [
-      "error",
+    indent: ['error', 2],
+    'prettier/prettier': [
+      'error',
       {
-        arrowParents: "avoid",
+        arrowParents: 'avoid',
         bracketSpacing: true,
-        endOfLine: "auto",
+        endOfLine: 'auto',
         useTabs: false,
         singleQuote: true,
         jsxSingleQuote: true,
@@ -16,19 +16,19 @@ module.exports = {
         printWidth: 80,
         singleAttributePerLine: true,
         tabWidth: 2,
-        trailingComma: "none",
+        trailingComma: 'none',
         importOrder: [
-          "<TYPES>",
-          "",
-          "^(react|next)$",
-          "",
-          "<THIRD_PARTY_MODULES>",
-          "",
-          "<BUILT_IN_MODULES>",
-          "",
-          "^[.]",
-        ],
-      },
-    ],
-  },
-};
+          '<TYPES>',
+          '',
+          '^(react|next)$',
+          '',
+          '<THIRD_PARTY_MODULES>',
+          '',
+          '<BUILT_IN_MODULES>',
+          '',
+          '^[.]'
+        ]
+      }
+    ]
+  }
+}

@@ -1,4 +1,6 @@
-import { CityPicker } from "./CityPicker";
-import { Logo } from "./Logo";
+import { CalloutCard } from './CalloutCard'
+import { CityPicker } from './CityPicker'
+import { Logo } from './Logo'
+import { StatsCard } from './StatsCard'
 
-export { CityPicker, Logo };
+export { CalloutCard, CityPicker, Logo, StatsCard }
