@@ -1,26 +1,21 @@
-import { NextPage } from "next";
-import Image from "next/image";
+import { CityPicker, Logo } from "@/components/ui";
+import { Card, Divider, Subtitle } from "@tremor/react";
+import { type NextPage } from "next";
 
 const HomePage: NextPage = () => {
   return (
-    <main className="flex flex-col gap-10 min-h-screen min-w-screen items-center justify-center">
-      <Image
-        src="/xolyd.svg"
-        alt="Vercel Logo"
-        width={600}
-        height={0}
-        priority
-        className="shadow-lg"
-      />
-      <div className="flex flex-col font-mono text-white">
-        <h1 className="text-4xl shadow-2xl">Next.JS Starter Kit</h1>
-        <span className="text-sm text-right">
-          by{" "}
-          <span className="font-bold text-lime-600 text-lg">
-            Henrique Fernandes
-          </span>
-        </span>
-      </div>
+    <main className="flex flex-col min-h-screen min-w-screen items-center justify-center bg-gradient-to-bl from-slate-950 to-slate-700">
+      <Card className="max-w-4xl mx-auto">
+        <Logo />
+        <Subtitle className="text-xl text-center my-10">
+          Weather application built with Next.JS, Tremor, TailwindCSS and Open
+          AI
+        </Subtitle>
+        <Divider className="my-10" />
+        <Card className="bg-gradient-to-br from-slate-950 to-slate-700">
+          <CityPicker />
+        </Card>
+      </Card>
     </main>
   );
 };
