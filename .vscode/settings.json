@@ -66,8 +66,8 @@
     "**/.DS_Store": true,
     "**/.hg": true,
     "**/.svn": true,
-    "**/.git": true,
-    "node_modules": true
+    "**/.git": true
+    // "node_modules": true
   },
   // Emmet
   "emmet.syntaxProfiles": {
